@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+![Urbs - Design System](./public/banner.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Urbs - React Component Design System
 
-Currently, two official plugins are available:
+Urbs, meaning _"lighthouse"_ in Latin, is a component design system built on the foundations of **IBM's Carbon Design System** and **Google's Material Design**. It provides a collection of reusable **React** components that enforce UI consistency and accelerate development within your **React** and **Tailwind** applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+To use **Urbs** in your React project:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Installation:**
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   pnpm install @quickstay-rooms/urbs
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Import components:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```javascript
+   import { Button, Card } from "@quickstay-rooms/urbs"
+   ```
+
+3. **Use components:**
+
+   ```jsx
+   function MyComponent() {
+   	return (
+   		<div>
+   			<Button>Click me</Button>
+   			<Card title="Card title" content="Card content" />
+   		</div>
+   	)
+   }
+   ```
+
+## Development
+
+**Urbs** utilizes **Vite** for an efficient development workflow.
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/urbs.git
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Start development server:**
+
+   ```bash
+   pnpm run dev
+   ```
+
+## Contributing
+
+We welcome contributions to Urbs! Please refer to the contributing guidelines within the repository for details on how to submit pull requests.
+
+## License
+
+Urbs is licensed under the Mozilla Public License (MPL). See the LICENSE file for more information.
